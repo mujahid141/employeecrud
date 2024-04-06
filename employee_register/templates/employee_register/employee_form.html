@@ -1,0 +1,15 @@
+{% extends "employee_register/base.html" %}
+
+<style>
+</style>
+{% block content %}
+<center>
+  
+  <form action=""  method="post" > 
+    {% csrf_token %}
+    {{  form }}
+    
+    <button>Submit</button>
+  </form>
+</center>
+    {% endblock %}
